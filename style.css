@@ -1,0 +1,43 @@
+@keyframes hueCycle {
+	from {filter:hue-rotate(0deg)}
+	to {filter:hue-rotate(360deg);}
+}
+
+html {
+	background:#FEFEFE;
+	font-family: Helvetica,Arial, sans-serif;
+	font-size:18px;
+}
+
+input{
+	font-family:"Segoe UI";
+	font-size: 150%;
+	background:#FEFEFE;
+	border:1px solid #9A9A9A;
+	transition:.3s;
+	outline:none;
+	margin:10px;
+}
+
+input:focus {
+box-shadow: 0px 0px 40px -7px rgba(0,0,0,1);
+}
+
+#Logo {
+	position: absolute;;
+	animation-name:hueCycle;
+	animation-duration: 10s;
+	animation-iteration-count:infinite; 
+}
+
+.container {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	width:50%;
+	height:50%;
+	text-align:center;
+}
